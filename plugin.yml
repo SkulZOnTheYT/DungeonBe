@@ -1,6 +1,6 @@
 name: DungeonBe
 version: 1.0-pre
-main: SkulZOnTheYT\DungeonBe\Main
+main: SkulZOnTheYT\DungeonBe\DBMain
 api: 5.0.0
 depend: BedrockEconomy
 softdepend: MaskUI
