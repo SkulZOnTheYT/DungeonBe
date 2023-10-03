@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace SkulZOnTheYT/DungeonBe;
+namespace SkulZOnTheYT\DungeonBe;
 
 use pocketmine\entity\EntityFactory;
 use pocketmine\plugin\PluginBase;
