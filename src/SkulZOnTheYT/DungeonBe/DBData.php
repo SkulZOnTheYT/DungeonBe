@@ -45,7 +45,7 @@ final class DBData implements \JsonSerializable{
     }
 
     public static function data(array $data): self{
-        return new DungeonData(...$data);
+        return new DBData(...$data);
     }
 
     public function jsonSerialize(): array{
@@ -145,7 +145,7 @@ final class DBData implements \JsonSerializable{
         $res = [];
         foreach ($this->items as $item) {
             if (mt_rand(1, 100) <= $item[1])
-                $res[] = Item::jsonDeserialize($item[0]);
+                $res[] = Item::jsonSerialize($item[0]);
         }
 
         return count($res) > 0 ? $res[mt_rand(0, count($res) - 1)] : null;
